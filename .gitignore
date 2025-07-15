@@ -1,0 +1,4 @@
+jain/.gitconfig
+[safe]
+directory = /path/to/directory
+migrations
