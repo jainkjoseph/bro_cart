@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RedStore | Ecommerce Website Design</title>
+    <title>IBRM | Ecommerce Website Design</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -19,19 +19,22 @@
         <div class="container">
             {% block menu %}
             {% include 'menu.html' %}
-            {% endblock menu %}
-
-
+            {% endblock menu %}    
             {% block banner %}
-            {% include 'banner_layout.html' %}
+
             {% endblock banner %}
+
         </div>
+
     </div>
 
-    <!-- Feadtued Categories -->
     {% block content %}
-  
+
     {% endblock content %}
+
+
+    <!-- Feadtued Categories -->
+
         <!-- Footer -->
     <div class="footer">
         <div class="container">
@@ -40,12 +43,12 @@
                     <h3>Download Our App</h3>
                     <p>Download App for Android and ios mobile phone.</p>
                     <div class="app-logo">
-                        <img src="images/play-store.png">
-                        <img src="images/app-store.png">
+                        <img src="{% static 'images/play-store.png' %}">
+                        <img src="{% static 'images/app-store.png' %}">
                     </div>
                 </div>
                 <div class="footer-col-2">
-                    <img src="images/logo-white.png">
+                    <img src="{% static 'images/logo-white.png' %}">
                     <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.
                     </p>
                 </div>
