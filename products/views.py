@@ -26,11 +26,13 @@ def list_products(request):
 
     return render (request,'products.html')
 
-def detail_product(request):
+def detail_product(request,pk):
 
     """
     product wise details - individual
     """
-    return render(request,'product_detail.html')
+    product=Product.objects.get(pk=pk)
+    context={'product': product}
+    return render(request,'product_detail.html',context)
 
  

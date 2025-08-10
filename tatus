@@ -1,0 +1,77 @@
+[33mcommit 6f621f0952e5e170536a2937e6964f18fec2a1a9[m[33m ([m[1;36mHEAD[m[33m, [m[1;31mkart/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: jain <jainibrm@gmail.com>
+Date:   Sat Aug 9 22:53:57 2025 +0400
+
+    set paginator including previous & next part 23
+
+[33mcommit 2cd5c563e020d4dd8b393c1eb4c9e79c0e49f8e6[m
+Author: jain <jainibrm@gmail.com>
+Date:   Fri Aug 8 12:26:42 2025 +0400
+
+    4 product per line display from model finished
+
+[33mcommit c0fc9a2cb7c8a3b31767b2c1f8e14bcc992e6331[m
+Author: jain <jainibrm@gmail.com>
+Date:   Sat Aug 2 22:37:44 2025 +0400
+
+    upto cart button finished
+
+[33mcommit 2e31f607ed8cce107b14d8a34687fc097e3e87af[m
+Author: jain <jainibrm@gmail.com>
+Date:   Sat Aug 2 20:18:55 2025 +0400
+
+    user registration for set
+
+[33mcommit f5be54b8c024a97e0443268277c7dc3b55d9078f[m
+Author: jain <jainibrm@gmail.com>
+Date:   Wed Jul 30 01:03:42 2025 +0400
+
+    product list tested ok, actual record addition not finished
+
+[33mcommit eda31bf9a5d98021c70e1cf78cf8e9b76a80c127[m
+Author: jain <jainibrm@gmail.com>
+Date:   Wed Jul 30 00:04:21 2025 +0400
+
+    index.html exended with blank_layout
+
+[33mcommit e373bdd50f3992c7b47d87595abb950d64b335ce[m
+Author: jain <jainibrm@gmail.com>
+Date:   Tue Jul 29 23:34:05 2025 +0400
+
+    home payge content layout fixed- working ok
+
+[33mcommit b45cd4422728483ac2bfbbd506cdf654c3f420b9[m
+Author: jain <jainibrm@gmail.com>
+Date:   Tue Jul 29 23:26:59 2025 +0400
+
+    banner layout fixed- working ok
+
+[33mcommit 788ab27cc0d542cea68117a8ebbe4ded1ec29280[m
+Author: jain <jainibrm@gmail.com>
+Date:   Tue Jul 29 23:02:04 2025 +0400
+
+     index file css fixed
+
+[33mcommit 2a16a3d35c521dc84ffb79a2707c1f5614cc1c68[m
+Author: jain <jainibrm@gmail.com>
+Date:   Sun Jul 20 21:46:25 2025 +0400
+
+    models created for 3 aaps
+
+[33mcommit 26b224877931c63606a18ae35d203eec3f3c833f[m
+Author: jain <jainibrm@gmail.com>
+Date:   Fri Jul 18 21:51:02 2025 +0400
+
+    image file also fixed
+
+[33mcommit 340ee6897218da25fde7041456dc902533120a11[m
+Author: jain <jainibrm@gmail.com>
+Date:   Fri Jul 18 10:01:11 2025 +0400
+
+    static file setting finished
+
+[33mcommit 6ff0f6d1ece06b34c16e494d76e4341c89ffc059[m
+Author: jain <jainibrm@gmail.com>
+Date:   Tue Jul 15 22:15:36 2025 +0400
+
+    4 apps created without migration folder exempted from commit
