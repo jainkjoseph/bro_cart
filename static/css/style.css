@@ -380,7 +380,7 @@ th:last-child{
     text-align: right;
 }
 
-/* Account page */
+/* Account page  brocart*/
 .account-page{
     padding: 50px 0;
     background: radial-gradient(#fff, #ffd6d6);
@@ -388,7 +388,7 @@ th:last-child{
 .form-container{
     background: #fff;
     width: 300px;
-    height: 400px;
+    height: 480px;
     position: relative;
     text-align: center;
     padding: 20px 0;
