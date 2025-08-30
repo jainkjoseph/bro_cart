@@ -54,8 +54,7 @@ git commands
 		git add .
 		git commit -m "msg"
 		git push <remote_name> <branch_name>
-		uid: jainkjoseph
-		pwd: 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
+
 		
 
 	Method 2:
