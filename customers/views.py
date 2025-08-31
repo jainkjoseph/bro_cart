@@ -1,12 +1,8 @@
 from django.shortcuts import render , redirect
 from django.contrib.auth.models import User
-from django.contrib.auth import authenticate , login,logout
+from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from . models import Customer
-
-
-
-
 
 # Create your views here.
 def sign_out(request):
@@ -29,7 +25,7 @@ def show_account(request):
             password=password,
             email=email
             )
-         customer = Customer.objects.create(
+         customer = Customer.objects.create_user(
             user=user,
             phone=phone,
             address=address)
@@ -45,6 +41,7 @@ def show_account(request):
       username=request.POST.get('username')
       password=request.POST.get('password')
       user=authenticate(username=username,password=password)
+ 
       if user:
          login(request,user)
          return redirect('home')
