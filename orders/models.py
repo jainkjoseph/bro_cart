@@ -25,6 +25,6 @@ class Order(models.Model):
     updated_at=models.DateTimeField(auto_now=True)
 
 class OrderedItem(models.Model):
-    product=models.ForeignKey(Product,related_name='added_cartS', on_delete=models.SET_NULL,null=True)
+    product=models.ForeignKey(Product,related_name='added_cart', on_delete=models.SET_NULL,null=True)
     quantity=models.IntegerField(default=1)
     owner=models.ForeignKey(Order,on_delete=models.CASCADE,related_name='added_items')
