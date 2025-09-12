@@ -1,4 +1,12 @@
 {% extends 'blank_layout.html' %}
 {% block content %}
+{% if messages %}
+ 
+    {% for message in messages %}
+        <li style="color: hsl(0, 83%, 16%);">{{message}}</li>
+    {% endfor %}
+ 
+{% else %}
 {% include 'cart_container.html' %}
+{% endif %}
 {% endblock content%}

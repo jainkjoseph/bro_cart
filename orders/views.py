@@ -1,19 +1,42 @@
 from django.shortcuts import render,redirect
 from .models import Order,OrderedItem
-
-from . models import Product
+from django.contrib import messages
+from . models import Product,Customer
 
 # Create your views here.
 def show_cart(request):
    user=request.user
-   customer=user.customer_profile
+   customer=user.customer_profile 
    cart_obj,created=Order.objects.get_or_create(
-      owner=customer,
-      order_status=Order.CART_STAGE
+   owner=customer,
+   order_status=Order.CART_STAGE
    )
    context = {'cart': cart_obj}
    return render(request,'cart.html',context)
-
+def checkout_cart(request):
+   if request.POST:
+ 
+      try:
+         user=request.user
+         customer=user.customer_profile
+         total=float(request.POST.get('total'))
+         order_obj=Order.objects.get(
+         owner=customer,
+         order_status=Order.CART_STAGE        
+         )
+         if order_obj:
+            order_obj.order_status.Order. ORDER_CONFIRMED
+            order_obj.total_price=total
+            order_obj.save()
+            status_message="Your order is processed. Your item will be delivered within 2 days"
+            message.success(request,status_message)
+         else:
+            status_message="Unable to processed. Your cart is empty order "
+            message.error(request,status_message)
+      except Exception as e:
+         status_message="unable to procesed. No items in the cart   try"
+         messages.error(request,status_message)
+   return redirect('cart')
    
 def add_to_cart(request):
 
@@ -45,4 +68,4 @@ def delete(request,pk):
    if instance:
       instance.delete()
       return redirect('cart')
-   
+

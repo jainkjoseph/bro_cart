@@ -35,7 +35,14 @@
                     <td colspan="2">Rs:{% grandtotal cart %}</td>
                 </tr>
 
-                <tr><td colspan="2"> </td> <td> <button>Confirm</button></td></tr>
+                <tr><td colspan="2"> </td> <td> 
+                <form  method="post" action="{% url 'checkout' %}" enctype="multipart/form-data">
+                {% csrf_token %}
+                    <input type="hidden" name="total" value="{% grandtotal cart %}"/>
+                
+                <button class="btn" type="submit">Checkout</button>
+                </form>
+                </td></tr>
             </tbody></table>
             
         </div>

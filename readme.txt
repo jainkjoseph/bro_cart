@@ -87,6 +87,7 @@ VS code setting
 	open folder from Vs code
 	install extension Save Typing
     code .   type from terminal to open vs code
+	select text  to move left  shift + tab , select text tab to move right
 
 psql commands
 
