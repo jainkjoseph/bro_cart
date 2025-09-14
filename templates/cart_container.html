@@ -9,6 +9,7 @@
                 <th>Quantity</th>
                 <th>Subtotal</th>
             </tr>
+            <p>{{user}}</p>
             {% for cart_item in cart.added_items.all %}
             <tr>
                 <td>
@@ -30,20 +31,22 @@
         </tbody></table>
         <div class="total-price">
             <table>
-                <tbody><tr>
-                    <td>Subtotal</td>
-                    <td colspan="2">Rs:{% grandtotal cart %}</td>
-                </tr>
-
-                <tr><td colspan="2"> </td> <td> 
-                <form  method="post" action="{% url 'checkout' %}" enctype="multipart/form-data">
-                {% csrf_token %}
-                    <input type="hidden" name="total" value="{% grandtotal cart %}"/>
-                
-                <button class="btn" type="submit">Checkout</button>
-                </form>
-                </td></tr>
-            </tbody></table>
+                <tbody>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td colspan="2">Rs:{% grandtotal cart %}</td>
+                    </tr>
+                    <tr><td colspan="2"> </td> 
+                        <td> 
+                            <form  method="post" action="{% url 'checkout' %}" enctype="multipart/form-data" >
+                                {% csrf_token %}
+                            <input type="hidden" name="total" value="{% grandtotal cart %}"/>
+                            <button class="btn" type="submit">Checkout</button>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
             
         </div>
     {% else %}

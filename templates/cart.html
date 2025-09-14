@@ -3,7 +3,8 @@
 {% if messages %}
  
     {% for message in messages %}
-        <li style="color: hsl(0, 83%, 16%);">{{message}}</li>
+       
+        <li class="{{message.tags}}">{{message}}</li>
     {% endfor %}
  
 {% else %}

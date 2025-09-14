@@ -101,7 +101,11 @@ psql commands
  \password      --- to change default password  - ubundo compulsory 
 
 		
-	                             
-	                             
+cd ..
+source bro_env/bin/activate
+cd bro_cart
+python3 manage.py runserver                             
+admin: milan/123
+cart user: jain/aby/Milan@2000                             
 	
 	

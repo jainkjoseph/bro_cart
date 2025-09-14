@@ -8,7 +8,7 @@ class Order(models.Model):
     DELETE=0
     DELETE_CHOICES=((LIVE,'LIVE'),(DELETE,'Delete'))
     CART_STAGE=0
-    IRDER_CONFIRMED=1
+    ORDER_CONFIRMED=1
     ORDER_PROCESSED=2
     ORDER_DELIVERED=3
     ORDER_REJECTED=4
@@ -17,7 +17,7 @@ class Order(models.Model):
                     (ORDER_REJECTED,"ORDER_REJECTED")
                     )
     order_status=models.IntegerField(choices=STATUS_CHOICE,default=CART_STAGE)
-    
+    total_price=models.FloatField(default=0)
     owner=models.ForeignKey(Customer,on_delete=models.SET_NULL ,null=True,related_name='orders')
  
     delete_status=models.IntegerField(choices=DELETE_CHOICES,default=LIVE)
